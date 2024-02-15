@@ -52,6 +52,10 @@ BOOK_DEPS := runtimesdk-yaml
 serve: $(MDBOOK) $(TABULATE) $(EMBED) $(RELEASELINK) runtimesdk-yaml
 	$(MDBOOK) serve
 
+#.PHONY: build
+#build: $(MDBOOK) $(TABULATE) $(EMBED) $(RELEASELINK) runtimesdk-yaml
+#	$(MDBOOK) build
+
 .PHONY: build
-build: $(MDBOOK) $(TABULATE) $(EMBED) $(RELEASELINK) runtimesdk-yaml
+build: $(MDBOOK) $(TABULATE) $(EMBED)
 	$(MDBOOK) build
